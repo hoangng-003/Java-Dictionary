@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="324.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddController">
+   <children>
+      <Label alignment="CENTER" layoutX="67.0" layoutY="35.0" prefHeight="27.0" prefWidth="200.0" text="Word Information" textAlignment="CENTER">
+         <font>
+            <Font name=".VnArialH" size="18.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="81.0" prefHeight="18.0" prefWidth="95.0" text="Word target" />
+      <Label layoutX="38.0" layoutY="206.0" text="Word explain" />
+      <Label layoutX="38.0" layoutY="148.0" prefHeight="18.0" prefWidth="57.0" text="Phonetics" />
+      <Button fx:id="addWord" alignment="CENTER" layoutX="120.0" layoutY="335.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 2, 0, 0, 0);" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <TextArea fx:id="wordExplain" layoutX="38.0" layoutY="231.0" prefHeight="79.0" prefWidth="246.0" />
+      <TextField fx:id="Phonetics" layoutX="38.0" layoutY="173.0" prefHeight="26.0" prefWidth="246.0" />
+      <TextField fx:id="wordTarget" layoutX="38.0" layoutY="111.0" prefHeight="26.0" prefWidth="246.0" />
+   </children>
+</AnchorPane>
